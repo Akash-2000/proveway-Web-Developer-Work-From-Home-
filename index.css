@@ -1,0 +1,223 @@
+*{
+    font-family: "Inter", serif;
+}
+.parent-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+
+.line{
+    border:1px solid #C8C8C8;
+    position: absolute;
+}
+.inter-heading {
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF6B82;
+    font-style: normal;
+    background-color: #fff;
+    padding:0 20px;
+}
+
+.inter-product-heading {
+    font-weight: 600;
+    font-size: 14px;
+    font-style: normal;
+   
+}
+
+.inter-product-price-off {
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    color: #fff;
+   
+}
+
+.inter-heading-position {
+    position: absolute;
+    top:0%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+}
+
+/* .middle-container{
+    border: 1px solid #C8C8C8
+} */
+
+.price-container{
+    display: flex;
+    justify-content: space-around; 
+    border: 1px solid #C8C8C8;
+    gap: 170px;
+    margin: 10px;
+    /* padding:10px 10px; */
+    flex-wrap: wrap;
+}
+
+.price-container-selected{
+    border:2px solid #FF6B82 
+}
+
+.isRecommended{
+    position: relative;
+}
+
+.recommendedBadge{
+    top: -10px;
+  
+    right: 5px;
+    position: absolute;
+    background-color: #FF6B82;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  */
+    transform: scale(1); 
+    transition: transform 0.2s ease-in-out; /* Hover animation */
+    border-radius: 5px 5px 5px 5px; /* Rounded bottom corners */
+}
+
+.recommendedBadge::after{
+    position: absolute;
+    content: attr(data-label);
+    top: -6px;
+    right: 14px;
+    padding: 0.5rem;
+    width: 10rem;
+    background: #FF6B82;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+  }
+
+.recommendedBadge1{
+    top: -0.8rem;
+    right: 11.6rem;
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    background-color: #FF6B82;
+    transform : rotate(25deg);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  */
+    
+    transition: transform 0.2s ease-in-out; /* Hover animation */
+}
+
+.recommendedBadge2{
+    top: -0.8rem;
+    right: 0.9rem;
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    background-color: #FF6B82;
+    transform : rotate(62deg);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  */
+    
+    transition: transform 0.2s ease-in-out; /* Hover animation */
+}
+
+.badge-text{
+    font-size: 12px;
+    color: white;
+}
+
+.select-container{
+    padding:5px 5px;
+    border: 1px solid #C8C8C8 ;
+}
+.unit-container{
+    display: flex;
+    gap: 10px;
+  
+}
+.unit-title{
+    display: flex;
+    align-items: center;
+}
+.selected-Form{
+    padding:10px 0px;
+}
+
+.units{
+    display: flex;
+    flex-direction: column;
+}
+.price-off{
+    padding: 2px 5px;
+    margin: 0px 3px;
+    background-color: #FF6B82;
+}
+.original-price{
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    
+}
+.old-price{
+    font-weight: 400;
+    font-size: 10px;
+    font-style: normal;
+    color: #888;
+    text-decoration:line-through;
+}
+.sub-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-total p:first-child{
+    font-weight: 500;
+    font-size: 20px;
+    color: #FF6B82;
+}
+
+.sub-total p:nth-child(2) {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+.sub-total-btn{
+    background-color: #FF6B82;
+    padding: 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.inter-sub-total-btn{
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+}
+
+.inter-sub-total-btn span:nth-child(2){
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.selected-Form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+    visibility: hidden;
+}
+.selected-Form-visible{
+    display: flex;
+    visibility: visible;
+}
+.selected{
+    margin-top: 14px;
+}
+
+#purchase-units{
+    accent-color: #FF6B82;
+    border:  1px solid black;
+    padding: 12px;
+}
