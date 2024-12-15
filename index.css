@@ -1,6 +1,9 @@
 *{
     font-family: "Inter", serif;
 }
+body{
+    margin-top: 100px;
+}
 .parent-container{
     background-color: #fff;
     display: flex;
@@ -42,7 +45,7 @@
 
 .inter-heading-position {
     position: absolute;
-    top:0%;
+    top:13%;
     left: 50%; 
     transform: translate(-50%, -50%); 
 
